@@ -1,0 +1,18 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* margin: 0 auto; */
+    margin-top: 50px;
+}
+
+header .links a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 40px;
+    border-bottom: 0px ;
+}
+/* header .links a:hover {
+    border-bottom: 100% #216BFC 2px;
+} */

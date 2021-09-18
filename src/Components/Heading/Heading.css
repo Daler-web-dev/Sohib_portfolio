@@ -1,0 +1,16 @@
+.heading  {
+    display: flex;
+    flex-direction: column;
+}
+.heading h1 {
+    font-size: 80px;
+    width: 10em;
+    color: #fff;
+}
+
+.heading .description {
+    width: 24em;
+    color: #87898D;
+    font-size: 28px;
+    margin-bottom: 54px;
+}
