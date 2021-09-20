@@ -13,6 +13,10 @@ header .links a {
     margin-right: 40px;
     border-bottom: 0px ;
 }
+header img {
+    max-width: 100%;
+    object-fit: contain;
+}
 /* header .links a:hover {
     border-bottom: 100% #216BFC 2px;
 } */

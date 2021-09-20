@@ -1,11 +1,12 @@
 .skills-block {
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
 	background: linear-gradient(#34393f, #16171a);
+	width: 90% !important;
+	margin: 0 auto !important;
 	padding: 65px 120px;
 	border-radius: 46px;
-	margin-top: 150px;
+	margin-top: 150px !important;
 }
 .wh-skills {
 	display: flex;

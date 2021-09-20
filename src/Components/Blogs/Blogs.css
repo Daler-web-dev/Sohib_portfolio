@@ -1,0 +1,27 @@
+.Blog {
+    width: 90%;
+    margin: 0 auto;
+}
+.Blog-heading  {
+    margin-bottom: 20px;
+}
+.Blog-heading h1 {
+    color: #fff;
+    font-size: 80px;
+}   
+.Blog-heading span {
+    font-size: 28px;
+    color: #707070;
+}
+.blog-item {
+    width: 100%;
+}
+.blog-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 40px;
+}
+.blog-item img:nth-child(1) {
+    height: 700px;
+}

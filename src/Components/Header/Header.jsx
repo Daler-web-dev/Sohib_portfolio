@@ -1,6 +1,7 @@
 import mainIcon from '../../assets/icons/logo.png'
+import {Route, BrowserRouter as Router, Switch, Link} from 'react-router-dom'
 import Button from '@material-ui/core/Button';
-import './Header.css'
+import './Header.css'   
 import {makeStyles} from '@material-ui/core/styles'
 
 const useStyles = makeStyles({
@@ -18,19 +19,21 @@ const Header = () => {
     const classes = useStyles()
 
     return (
-        <header>
-            <img src={mainIcon} alt="" />
-            <div className="links">
-                <a href="">Bosh Sahifa</a>
-                <a href="">Portfolio</a>
-                <a href="">Blog</a>
-                <Button 
-                    className={classes.root}
-                >
-                    Aloqa
-                </Button>
-            </div>
-        </header>
+        <div className="Header">
+            <header>
+                <img src={mainIcon} alt="" />
+                <div className="links">
+                    <Link to="/">Bosh Sahifa</Link>
+                    <Link to="#">Portfolio</Link>
+                    <Link to="/Blog">Blog</Link>
+                    <Button 
+                        className={classes.root}
+                    >
+                        Aloqa
+                    </Button>
+                </div>
+            </header>
+        </div>
     )
 }
 

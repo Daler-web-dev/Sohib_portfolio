@@ -1,16 +1,25 @@
 import React from 'react'
+import {Route, BrowserRouter as Router, Switch} from 'react-router-dom'
 import './App.css'
 import Footer from './Components/Footer/Footer'
 import Header from './Components/Header/Header'
-import Main from './Components/main/Main'
+import Main from './Pages/main/Main'
+import Blog from './Pages/Blog/Blog'
+
 
 function App() {
 	return (
-		<div className="App">
-			<Header/>
-			<Main/>
-			<Footer/>
-		</div>
+		<Router>
+			<div className="App">
+				<Header/>
+				<Switch>
+					<Route path="/Blog" component={Blog} />
+					<Route path="/" component={Main} />
+					{/* <Main className="Main"/> */}
+				</Switch>
+				<Footer/>
+			</div>
+		</Router>
 	)
 }
 

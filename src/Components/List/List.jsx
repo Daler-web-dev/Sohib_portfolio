@@ -43,7 +43,8 @@ const useStyles = makeStyles({
         backgroundColor: '#1662F8',
         padding: '27px 49px',
         borderRadius: '50px',
-        boxShadow: '1px 1px 10px #75A4FF'
+        boxShadow: '1px 1px 10px #75A4FF',
+        marginBottom: '100px'
     },
     container: {
         margin: '100px 0px'
@@ -56,7 +57,7 @@ const List = () => {
     return (
         <div className="List">
             <h1 className="heading-h2" >Men qilgan ishlar <img src={smileImg} alt="" /> </h1>
-            <Grid container xs={12} spacing={8}  className={classes.container} >
+            <Grid container xs={10} spacing={8}  className={classes.container} >
                 {works.map(item => (
                     <Grid item xs={6}>
                         <Item item={item}/>
@@ -71,7 +72,6 @@ const List = () => {
 }
 
 const Item = ({item}) => {
-    console.log(item);
     return (
         <div id={item.id} className="item_work" >
             <img src={item.img} alt="" />
